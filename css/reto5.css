@@ -1,0 +1,93 @@
+body{
+    background: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    width: 40%;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px ;
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+form select{
+    width: 30%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+form button{
+    margin-top: 10px;
+    width: 100px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]{
+    background-color: #414040;
+    color: white;
+}
+
+form button[type="reset"]{
+    background-color: #ffffff;
+    color: #00ded7;
+}
+
+.success{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: #23a78f;
+    padding: 10px;
+    transition: .3s ease-in;
+}
+
+.error{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(202, 46, 95);
+    padding: 10px;
+    transition: .3s ease-in;
+}
+
+@media (max-width:700px) {
+    form .option{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form .option select{
+        width: 100%;
+    }
+}

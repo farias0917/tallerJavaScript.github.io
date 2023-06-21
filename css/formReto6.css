@@ -1,0 +1,68 @@
+.form-container{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+.form-container .form-input{
+    position: relative;
+    width: 100%;
+}
+
+.form-container input{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-container label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: .5s ease;
+}
+
+
+.form-input input:valid ~ label,
+.form-input input:focus ~ label{
+    top: -10px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #39d4dd;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+/*resultado de los datos enviados con estilos*/
+.texto{
+    background-color: rgb(71, 255, 227);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.texto2{
+    background-color: rgb(71, 255, 227);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/*estilos de validación para cuando se envia el campo vacio*/
+.error{
+    background-color: rgb(243, 80, 105);
+    color: white;
+    margin-top: 12px;
+    padding: 5px;
+}
+
+.error2{
+    background-color: rgb(243, 80, 105);
+    color: white;
+    margin-top: 12px;
+    padding: 5px;
+}
+
+
+

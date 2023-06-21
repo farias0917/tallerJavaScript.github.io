@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reto6.css">
+    <link rel="stylesheet" href="css/formReto6.css">
+
+    <script src="https://kit.fontawesome.com/861b3604ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="index.html"> <i class="fa-solid fa-arrow-right-from-bracket exit"></i></a>
+    <!-- ========== Start square modal ========== -->
+      <!--Perímetro--->
+      <div id="squareModalWindowP" class="squareModal">
+        <div class="squareModalcontent" id="squareModalcontent">
+            <span class="closeModal" >X</span>
+            <h2>Calcular Perímetro del cuadrado</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="longitud" required>
+                    <label for="longitud">Ingrese la longitud del cuadrado:</label>
+                </div>
+                <button id="squarePerimeter">Calcular</button>
+                <p id="texto"></p>
+            </form>
+        </div>
+    </div>
+       <!--Área--->
+     <div id="sqAreaModalWindowA" class="sqAreaModal">
+        <div class="sqAreaModalcontent" id="sqAreaModalcontent">
+            <span class="closeModal closeModalA" >X</span>
+            <h2>Calcular Área del cuadrado</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="lado" required>
+                    <label for="lado">Ingrese un lado:</label>
+                </div>
+                <button id="squareArea">Calcular</button>
+                <p id="texto2"></p>
+            </form>
+        </div>
+    </div>       
+    <!-- ========== End square modal ========== -->
+
+
+     <!-- ========== Start rectangle modal ========== -->
+      <!--Perímetro--->
+      <div id="rectangleModalWindowP" class="rectangleModal">
+        <div class="rectangleModalcontent" id="rectangleModalcontent">
+            <span class="closeModal closeModalB" >X</span>
+            <h2>Calcular Perímetro del rectangulo</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="lado1R" required>
+                    <label for="lado1R">Ingrese un lado del rectangulo:</label>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" id="lado2R" required>
+                    <label for="lado2R">Ingrese otro lado del rectangulo:</label>
+                </div>
+                <button id="rectanglePerimeter">Calcular</button>
+                <p id="texto3"></p>
+            </form>
+        </div>
+    </div>
+       <!--Area--->
+     <div id="regAreaModalWindowA" class="regAreaModal">
+        <div class="regAreaModalcontent" id="regAreaModalcontent">
+            <span class="closeModal closeModalC" >X</span>
+            <h2>Calcular Área del rectangulo</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="lado1Ra" required>
+                    <label for="lado1Ra">Ingrese un lado:</label>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" id="lado2Ra" required>
+                    <label for="lado2Ra">Ingrese un lado:</label>
+                </div>
+                <button id="rectangleArea">Calcular</button>
+                <p id="texto4"></p>
+            </form>
+        </div>
+    </div>       
+    <!-- ========== End rectangle modal ========== -->
+
+     <!-- ========== Start triangle modal ========== -->
+      <!--Perímetro--->
+      <div id="triangleModalWindowP" class="triangleModal">
+        <div class="triangleModalcontent" id="triangleModalcontent">
+            <span class="closeModal closeModalD" >X</span>
+            <h2>Calcular Perímetro del Triángulo</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="longitud" required>
+                    <label for="longitud">Ingrese la longitud del cuadrado:</label>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" id="longitud" required>
+                    <label for="longitud">Ingrese la longitud del cuadrado:</label>
+                </div>
+                <button id="trianglePerimeter">Calcular</button>
+                <p id="texto"></p>
+            </form>
+        </div>
+    </div>
+       <!--Area--->
+     <div id="trgAreaModalWindowA" class="trgAreaModal">
+        <div class="trgAreaModalcontent" id="trgAreaModalcontent">
+            <span class="closeModal closeModalE" >X</span>
+            <h2>Calcular Área del Triángulo</h2>
+            <form action="" class="form-container">
+                <div class="form-input">
+                    <input type="text" id="lado" required>
+                    <label for="lado">Ingrese un lado:</label>
+                </div>
+
+                <div class="form-input">
+                    <input type="text" id="lado" required>
+                    <label for="lado">Ingrese un lado:</label>
+                </div>
+                <button id="triangleArea">Calcular</button>
+                <p id="texto2"></p>
+            </form>
+        </div>
+    </div>       
+    <!-- ========== End triangle modal ========== -->
+    <h1>Reto 6</h1>
+    <div class="cardsContainer">
+        <div class="card">
+            <img src="img/cuadrado.png" alt="" width="100">
+            <button id="squareModalBtnP">Perímetro</button>
+            <button id="squareModalBtnA">Área</button>
+        </div>
+    
+        <div class="card">
+            <img src="" alt="">
+            <img src="img/rectangulo.png" alt="" width="100">
+            <button id="rectangleModalBtnP">Perímetro</button>
+            <button id="rectangleModalBtnA">Área</button>
+        </div>
+    
+        <div class="card">
+            <img src="img/triangulo.png" alt="" width="100">
+            <button id="triangleModalBtnP">Perímetro</button>
+            <button id="triangleModalBtnA">Área</button>
+        </div>
+    
+        <div class="card">
+            <img src="img/circulo.png" alt="" width="100">
+            <button>Perímetro</button>
+            <button>Área</button>
+        </div>  
+    </div>
+    <script src="js/reto6.js"></script>
+    <script src="js/modalReto6.js"></script>
+</body>
+</html>

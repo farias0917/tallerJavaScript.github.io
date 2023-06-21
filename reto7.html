@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reto7.css">
+
+    <script src="https://kit.fontawesome.com/861b3604ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="index.html"> <i class="fa-solid fa-arrow-right-from-bracket exit"></i></a>
+    <div class="modal" id="modal">
+        <div class="modalContent" id="modalContent">
+            <span class="closeModal" id="closeModal"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h1>Términos y condiciones</h1>
+            <div class="termsText">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis pariatur impedit voluptatum qui! Neque, quod dolorum fuga, inventore tempore aut exercitationem minima obcaecati accusamus quibusdam perferendis animi beatae quis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias perferendis, ipsam distinctio esse quis est aliquam! Itaque dolore a, veniam reiciendis, deleniti sequi, quasi at sapiente maiores nam repellat.
+                </p>
+            </div>
+            <!-- <div class="confirmModalBtn">
+                <button id="termsAcept">Aceptar</button>
+                <button>Cancelar</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <form action="home.html" class="formContainer" id="formValidation" novalidate >
+            <h1>Reto 7</h1>
+            <div class="inputContainer">
+                <select name="" id="docType" class="select">
+                    <option value=""  disabled selected>Tipo de documento</option>
+                    <option value="T.I">T.I</option>
+                    <option value="C.C">C.C</option>
+                </select>
+                <div id="feedbackSelect"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="text" id="docNumber" required>
+                <label for="docNumber">Número de documento:</label>
+                <div id="feedback"></div>
+            </div>
+            <div class="inputContainer" id="inputName">
+                <input type="text" id="name" required>
+                <label for="name">Nombre:</label>
+                <div id="feedback2"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="text" id="lastName" required>
+                <label for="lastName">Apellido:</label>
+                <div id="feedback3"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="date" id="birthday" placeholder="fecha" required>
+                <div id="feedback4"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="text" id="email" required>
+                <label for="email">Correo:</label>
+                <div id="feedback5"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="password" id="pass" required>
+                <label for="pass">Contraseña:</label>
+                <div id="feedback6"></div>
+            </div>
+            <div class="inputContainer">
+                <input type="password" id="passConfirm" required>
+                <label for="passConfirm">Confimar contraseña:</label>
+                <div id="feedback7"></div>
+            </div>
+            <div class="terms">
+                <p>terminos y condiciones
+                    <input type="checkbox" id="tCheckbox">
+                </p>
+                <button id="termsBtn">Ver terminos y condiciones</button>
+            </div>
+            <div id="feedback8"></div>
+            <div class="btnField">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>Copy right ©2023 </footer>
+
+    <script src="js/reto7.js"></script>
+    <script src="js/modalReto7.js"></script>
+</body>
+</html>

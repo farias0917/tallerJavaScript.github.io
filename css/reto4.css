@@ -1,0 +1,66 @@
+body{
+    background: #fc00ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h1,p{
+    color: white;
+}
+form{
+    margin-top: 10px;
+    text-align: center;
+    width: 40%;
+    min-width: 300px;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.347);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+
+form input{
+    width: 100%;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+form button{
+    margin-top: 10px;
+    width: 100px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]{
+    background-color: #00ded7;
+    color: white;
+}
+
+form button[type="reset"]{
+    background-color: #ffffff;
+}
+
+.success{
+    border: 2px solid greenyellow;
+}
+
+.error{
+    border: 2px solid rgb(255, 47, 92);
+}

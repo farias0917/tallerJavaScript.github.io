@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reto1.css">
+
+    <script src="https://kit.fontawesome.com/861b3604ef.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <a href="index.html"> <i class="fa-solid fa-arrow-right-from-bracket exit"></i></a>
+    <h1>Reto 1 </h1>
+    <div class="container">
+        <form action="">
+            <h2>Consultar o convertir texto</h2>
+            <label for="text">Ingrese un texto o una palabra:</label>
+            <input type="text" name="" id="text" placeholder="Escriba el texto o la palabra aqui">
+            <select name="" id="options">
+                <option value="" disabled selected>Seleccione alguna de las opciones</option>
+                <option value="long">Longitud de la palabra</option>
+                <option value="convertMayus">palabra convertida en mayúsculas</option>
+                <option value="convertMin">palabra convertida en minúsculas</option>
+                <option value="char">primer carácter de la palabra</option>
+            </select>
+            <div class="ContainerText">
+                <p id="message"></p>
+            </div>
+            <div class="btn">
+                <button type="reset" id="clear" class="clear">Limpiar</button>
+                <button id="btnConvert">Convertir</button>
+            </div>
+        </div>
+        </form>
+    <script src="js/reto1.js"></script>
+</body>
+</html>

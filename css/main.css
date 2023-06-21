@@ -1,0 +1,173 @@
+
+.container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.jsContainer{
+    position: relative;
+    background-color: rgb(68, 68, 66);
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.jsContainer:hover{
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+.jsContainer h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgb(88, 88, 85);
+    font-size: 65px;
+    padding: 5px;
+}
+
+.containerChallenge{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(34, 32, 32);
+    width: 100vw;
+    height:100vh;
+    top: -100vh;
+    transition: .7s ease-in;
+   
+}
+
+.containerChallenge2{
+    position: absolute;
+    top: 0;
+    transition: .7s ease-in;
+}
+
+.box{
+    position: relative;
+    background: #2d2b2b;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.box:active{
+    transform: scale(.9);
+}
+
+.box1:hover::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(0deg, transparent,
+    transparent,rgb(200, 0, 255),rgb(200, 0, 255), rgb(200, 0, 255));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animar 2s linear infinite;
+}
+
+.box2:hover::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(0deg, transparent,
+    transparent,rgb(0, 217, 255),rgb(0, 217, 255),rgb(0, 217, 255));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animar 2s linear infinite;
+}
+
+.box3:hover::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(0deg, transparent,
+    transparent,rgb(46, 230, 126),rgb(46, 230, 126), rgb(46, 230, 126));
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animar 2s linear infinite;
+}
+
+@keyframes animar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.cards{
+    position: absolute;
+    inset: 4px;
+    background-color: #222;
+    padding: 50px 40px;
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cards h2{
+    font-size: 35px;
+}
+
+.card1 h2{
+    color: rgb(200, 0, 255);
+}
+
+.card2 h2{
+    color: rgb(0, 217, 255);
+}
+.card3 h2{
+    color: rgb(46, 230, 126);
+}
+
+i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 180deg;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width:700px) {
+    body{
+        background-color: wheat;
+    }
+}
+
